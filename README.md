@@ -34,5 +34,5 @@ Just run AddressBook.exe
 * 2026-##-##: project found
 * 2009-11-25: Add: Alarm
 * 2009-09-15: Add: Display contacts
-* 2009-09-15: Add: Create/Edit contact
-* 2009-09-15: Project started
+* 2008-01-26: Add: add contact
+* 2008-01-26: Project started
