@@ -31,4 +31,8 @@ Just run AddressBook.exe
 
 ## Roadmap
 
-* 2009-09-15: Project started \[Delphi version]
+* 2026-##-##: project found
+* 2009-11-25: Add: Alarm
+* 2009-09-15: Add: Display contacts
+* 2009-09-15: Add: Create/Edit contact
+* 2009-09-15: Project started
