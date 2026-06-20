@@ -1,0 +1,36 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{E7C75A80-E50C-4745-8C78-CDF448B58022}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="AddressBook.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="AddressBook">
+			<MSBuild Projects="AddressBook.dproj"/>
+		</Target>
+		<Target Name="AddressBook:Clean">
+			<MSBuild Targets="Clean" Projects="AddressBook.dproj"/>
+		</Target>
+		<Target Name="AddressBook:Make">
+			<MSBuild Targets="Make" Projects="AddressBook.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="AddressBook"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="AddressBook:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="AddressBook:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>
